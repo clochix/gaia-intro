@@ -1,0 +1,6 @@
+.introjs-overlay {
+  pointer-events: none;
+}
+.introjs-tooltipbuttons {
+  display: none;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Gaia - Guided tour - Statusbar</title>
+    <link rel="stylesheet" type="text/css" href="style/statusbar.css">
+    <link rel="stylesheet" type="text/css" href="style/help.css">
+    <link rel="stylesheet" type="text/css" href="lib/intro.js/introjs.css">
+    <link rel="prefetch" type="application/l10n" href="locales/statusbar.ini" />
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div id="statusbar" data-z-index-level="statusbar">
+      <!-- Carrier & date label -->
+      <div id="statusbar-label" class="sb-start-upper"></div>
+
+      <!-- Notification -->
+      <div id="statusbar-notification" class="sb-start sb-icon sb-icon-notification" data-num="2" data-unread="true" data-l10n-id="notification" data-intro=""></div>
+
+      <!-- Time -->
+      <div id="statusbar-time" style="height: 3.5rem"></div>
+
+      <!-- Status -->
+      <div id="statusbar-battery" class="sb-icon sb-icon-battery" data-level="100" data-l10n-id="battery" data-intro=""></div>
+      <div id="statusbar-battery-charging" class="sb-icon sb-icon-battery" data-level="100" data-charging="true" data-l10n-id="battery-charging" data-intro="" ></div>
+      <div class="sb-icon sb-icon-wifi" data-level="0" data-connecting="true" data-l10n-id="wifi-connecting" data-intro=""></div>
+      <div id="statusbar-wifi" class="sb-icon sb-icon-wifi" data-level="4" data-l10n-id="wifi" data-intro=""></div>
+      <div class="sb-icon sb-icon-data" data-type="H"  data-l10n-id="data-H" data-intro=""></div>
+      <div class="sb-icon sb-icon-data" data-type="H+" data-l10n-id="data-HH" data-intro=""></div>
+      <div class="sb-icon sb-icon-data" data-type="2G" data-l10n-id="data-2G" data-intro=""></div>
+      <div class="sb-icon sb-icon-data" data-type="3G" data-l10n-id="data-3G" data-intro=""></div>
+      <div class="sb-icon sb-icon-data" data-type="4G" data-l10n-id="data-4G" data-intro=""></div>
+      <div class="sb-icon sb-icon-data" data-type="E"  data-l10n-id="data-E" data-intro=""></div>
+      <div class="sb-icon sb-icon-data" data-type="circle" data-l10n-id="data-circle" data-intro=""></div>
+      <div id="statusbar-flight-mode" class="sb-icon sb-icon-flight-mode" data-l10n-id="flight" data-intro=""></div>
+      <div class="sb-icon sb-icon-signal" data-level="-1" data-l10n-id="signal0" data-intro="" ></div>
+      <div class="sb-icon sb-icon-signal" data-l10n-id="nosim" data-intro="" ></div>
+      <div class="sb-icon sb-icon-signal" data-level="3" data-roaming="true" data-l10n-id="roaming" data-intro="" ></div>
+      <div class="sb-icon sb-icon-signal" data-level="-1" data-searching="true" data-l10n-id="searching" data-intro="" ></div>
+      <div class="sb-icon sb-icon-signal" data-level="0" data-emergency="true" data-l10n-id="emergency" data-intro="" ></div>
+      <div id="statusbar-signal" class="sb-icon sb-icon-signal" data-level="5" data-l10n-id="signal" data-intro="" ></div>
+      <div id="statusbar-headphones" class="sb-icon sb-icon-headphones" data-l10n-id="headphones" data-intro='Écouteurs branchés' ></div>
+
+      <!-- Permissions -->
+      <div class="sb-icon sb-icon-tethering" data-l10n-id="tethering-off" data-intro="" ></div>
+      <div class="sb-icon sb-icon-tethering" data-active="true" data-l10n-id="tethering-on" data-intro="" ></div>
+      <div id="statusbar-alarm" class="sb-icon sb-icon-alarm" data-l10n-id="alarm" data-intro="" ></div>
+      <div class="sb-icon sb-icon-bluetooth" data-l10n-id="bluetooth-off" data-intro="" ></div>
+      <div class="sb-icon sb-icon-bluetooth" data-active="true" data-l10n-id="bluetooth-on" data-intro="" ></div>
+      <div id="statusbar-mute" class="sb-icon sb-icon-mute" data-l10n-id="mute" data-intro="" ></div>
+      <div class="sb-icon sb-icon-recording" data-l10n-id="record-off" data-intro="" ></div>
+      <div class="sb-icon sb-icon-recording" data-active="true" data-l10n-id="record-on" data-intro="" ></div>
+      <div id="statusbar-sms" class="sb-icon sb-icon-sms" data-l10n-id="sms" data-intro="" data-num="2"></div>
+      <div class="sb-icon sb-icon-geolocation" data-l10n-id="geoloc-off" data-intro="" ></div>
+      <div class="sb-icon sb-icon-geolocation" data-active="true" data-l10n-id="geoloc-on" data-intro="" ></div>
+      <div id="statusbar-usb" class="sb-icon sb-icon-usb" data-l10n-id="usb" data-intro="" ></div>
+      <div id="statusbar-call-forwarding" class="sb-icon sb-icon-call-forwarding" data-l10n-id="forwarding" data-intro="" ></div>
+
+      <!-- Activity -->
+      <canvas id="statusbar-system-downloads" data-l10n-id="download" data-intro=""></canvas>
+      <canvas id="statusbar-network-activity" data-l10n-id="network" data-intro=""></canvas>
+
+    </div>
+    <script type="text/javascript" src="lib/l10n.js"></script>
+    <script type="text/javascript" src="lib/intro.js/intro.js"></script>
+    <script type="text/javascript" src="js/statusbar.js"></script>
+  </body>
+</html>
